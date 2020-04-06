@@ -1,0 +1,422 @@
+/* ................... Body ......................*/
+
+*{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  text-decoration: none;
+  list-style: none;
+  height: 1600px;
+  height: auto;
+ 
+}
+body{
+  font-family: montserrat;
+}
+
+
+/* ................... Logo......................*/
+
+
+label.logo{
+  line-height: 80px;
+  padding: 0 10px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 13%;
+}
+
+/* ................... NavBar......................*/
+
+nav{
+  background:#1d1d1b;
+  height: 80px;
+  width: 100%;
+}
+nav ul{
+  float: right;
+  margin-right: 10%;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 75px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #ffff;
+  font-size:17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+li a.active,li a:hover{
+  color:#a7c86f;
+  transition: .1s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #a7c86f;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 768px){
+  label.logo {padding-left: 10px;}
+  nav ul li a {font-size: 16px;}
+}
+@media (max-width: 767px){
+  .checkbtn{ display: block;}
+  ul{
+    position: fixed;
+    width: 80%;
+    height:100vh;
+    background:#1d1d1b;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1; 
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{ font-size: 20px; }
+  a:hover,a.active{
+    background: none;
+    color:#1d1d1b;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+   .checkbtn:hover,.active{
+    background: none;
+    color:#ffff;
+  }
+}
+
+/* ....................Image Wrapper......................*/
+
+.image_full {
+  position: relative;
+  display:block;
+  width: 100%;
+  height: auto;
+  z-index: -1;  
+}
+
+ .image_mobile{
+  position: relative;
+  display:none;
+  width: 100%;
+  height: auto;
+  z-index: -1;  
+ }
+
+@media (max-width: 640px) and (min-width: 320px){
+  .image_full { display:none;
+  }
+  .image_mobile {display:block;
+  }
+}
+/* ...................End Image Wrapper.....................*/
+
+/* ....................Button Desktop.......................*/
+
+.btn_full{
+  position: absolute;
+  display: flex;
+  top:55%;
+  left:16%;
+  background-color:#a7c86f;
+  color: #1d1d1b;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  z-index: -1; 
+}
+
+.btn_full:hover,
+.btn_full:active {
+  color: #a7c86f;
+  background-color: #1d1d1b;
+}
+.btn_full,
+.btn_full:focus {
+  color: #1d1d1b;
+  background-color: #a7c86f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn_full{
+  padding: 14px 34px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius:50px;
+}
+
+.btn_full{
+  display:block; 
+ 
+}
+.btn_mobile{
+  display:none; 
+
+}
+
+@media all and (max-width: 767px) and (min-width: 320px){
+ .btn_full { display:none;
+  }
+ .btn_mobile{ display:block;  
+  }
+}
+/* ..................End Button Desktop....................*/
+
+/* ....................Button Mobile.......................*/
+
+.btn_mobile{
+  position: absolute;
+  display: flex;
+  top:32%;
+  left:22%;
+  background-color:#a7c86f;
+  color: #1d1d1b;
+  font-size: 16px;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  z-index: -1; 
+}
+
+.btn_mobile:hover,
+.btn_mobile:active {
+  color: #a7c86f;
+  background-color: #1d1d1b;
+}
+.btn_mobile,
+.btn_mobile:focus {
+  color: #1d1d1b;
+  background-color: #a7c86f;
+  text-decoration: none;
+  font-weight: bold;
+ 
+
+}
+
+.btn_mobile{
+  padding: 8px 14px;
+  font-size: 16px;
+  line-height: 1.3333333;
+  border-radius:50px;
+}
+
+.btn_full{
+  display:block; 
+ 
+}
+.btn_mobile{
+  display:none; 
+
+}
+
+@media all and (max-width: 767px) and (min-width: 320px){
+ .btn_full { display:none;
+  }
+ .btn_mobile{ display:block;  
+  }
+}
+
+/* ....................End Button Mobile.......................*/
+
+/* ........................Green Line..........................*/
+
+.green-line-desktop{
+  width: 100%;
+  height:5px;
+  background-color: #a7c86f;
+  display:block; 
+}
+
+ .green-line-mobile{
+  width: 100%;
+  height:50px;
+  background-color: #1d1d1b;
+  display:none; 
+}
+
+@media (max-width: 640px) and (min-width: 320px){
+ .green-line-desktop{ display:none;
+  }
+ .green-line-mobile{ display:block;  
+  }
+}
+
+/* .....................End Green Line.......................*/
+
+/* .........................Footer..........................*/
+
+.footer {
+  position: relative;
+  margin:0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  background-color: #1d1d1b;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.smal-line{
+  width: 100%;
+  height: 1px;
+  background-color: #b1d099;
+  margin-bottom: 50px;
+}
+
+.footer-top h1{
+  font-size: 10px;
+  text-align: center;
+  color: #92999f;
+ }
+  .footer-top p{
+  font-size: 8px;
+  text-align: center;
+  color: #92999f;
+ }
+
+ .footer-bottom p{
+  font-size: 10px;
+  color: #92999f;
+ }
+  .footer-bottom a{
+  font-size: 8px;
+  color: #92999f;
+ }
+
+/* .........................Footer Top..........................*/
+
+/* Desktop */
+@media all and (min-width:768px) {
+  .smal-line{  
+  width: 100%;
+  height: 1px;
+  background-color: #b1d099;
+  margin-bottom: 50px;
+  }
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+  .smal-line{ 
+  width: 100%;
+  height: 1px;
+  background-color: #b1d099;
+  margin-bottom: 10px;
+  }
+}
+/* Desktop */
+@media all and (min-width:768px) {
+  .footer-top h1 { 
+  font-size: 32px;
+  color: #92999f;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  }
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+  .footer-top h1 { 
+  font-size:14px; 
+  padding-top: 8px;
+  margin-bottom: 10px;
+  }
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+  .footer-top p { 
+  font-size:16px;
+  color: #92999f;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-decoration: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+  .footer-top p { 
+  font-size: 8px;  
+  margin-bottom: 5%;
+  margin-left: 40px;
+  margin-right: 40px; 
+  }
+}
+
+/* ........................End Footer Top..........................*/
+
+/* ....................... Footer Bootom..........................*/
+
+
+/* Desktop */
+@media all and (min-width:768px) {
+  .footer-bottom p {
+  font-size: 18px;
+  color: #92999f;
+  margin-left: 0;
+  display: inline;
+  padding-bottom: 20px;
+
+  }
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+ .footer-bottom  p { 
+  font-size: 10px;
+  color: #92999f;
+  text-align: center;
+  }
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+ .footer-bottom  a{
+  color:#92999f;
+  font-size:14px;
+  display: inline;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) {
+ .footer-bottom  a{ 
+  cursor: pointer;
+  font-size: 8px;
+  color: #92999f;
+  text-align: center;
+  }
+}
+
+/* .......................End Footer.......................*/
