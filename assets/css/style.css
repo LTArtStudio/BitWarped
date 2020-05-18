@@ -90,14 +90,15 @@ li a.active,li a:hover{
     line-height: 30px;
   }
   nav ul li a{ font-size: 20px; }
-  a:hover,a.active{
+  a:hover a.active{
     background: none;
     color:#1d1d1b;
   }
   #check:checked ~ ul{
     left: 0;
   }
-   .checkbtn:hover,.active{
+   .checkbtn:hover,
+   .checkbtn:active{
     background: none;
     color:#ffff;
   }
@@ -146,27 +147,13 @@ li a.active,li a:hover{
   text-align: center;
   line-height: 1.5;
   font-weight: bold;
-  z-index: -1; 
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
 }
 
-.btn_full:hover,
-.btn_full:active {
-  color: #a7c86f;
-  background-color: #1d1d1b;
-}
-.btn_full,
-.btn_full:focus {
-  color: #1d1d1b;
-  background-color: #a7c86f;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn_full{
-  padding: 14px 34px;
-  font-size: 18px;
-  line-height: 1.3333333;
-  border-radius:50px;
+.btn_full:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btn_full{
@@ -203,29 +190,13 @@ li a.active,li a:hover{
   text-align: center;
   line-height: 1.5;
   font-weight: bold;
-  z-index: -1; 
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
 }
 
-.btn_mobile:hover,
-.btn_mobile:active {
-  color: #a7c86f;
-  background-color: #1d1d1b;
-}
-.btn_mobile,
-.btn_mobile:focus {
-  color: #1d1d1b;
-  background-color: #a7c86f;
-  text-decoration: none;
-  font-weight: bold;
- 
-
-}
-
-.btn_mobile{
-  padding: 8px 14px;
-  font-size: 16px;
-  line-height: 1.3333333;
-  border-radius:50px;
+.btn_mobile:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btn_full{
@@ -291,10 +262,11 @@ li a.active,li a:hover{
   margin-bottom: 50px;
 }
 
-.footer-top h1{
-  font-size: 10px;
+.footer-top h2{
+  font-size: 20px;
   text-align: center;
   color: #92999f;
+  padding-top: 30px;
  }
   .footer-top p{
   font-size: 8px;
